@@ -70,10 +70,10 @@ import org.lwjgl.util.glu.GLU;
 public class FBOTest {
 
     //constants
-    private static final String LWJGL_NATIVIES = "C:\\Users\\antonso\\git\\LWJGL_Samples\\target\\natives";
+    private static final String LWJGL_NATIVIES = System.getProperty("user.dir") +"/target/natives";
     private static final String ORG_LWJGL_LIBPATH = "org.lwjgl.librarypath";
-    private static final String LIB_LWJGL = "lwjgl";
-    private static final String TEMP_FOLDER = "target";
+//    private static final String LIB_LWJGL = "lwjgl";
+//    private static final String TEMP_FOLDER = "target";
 
     float angle;
     
