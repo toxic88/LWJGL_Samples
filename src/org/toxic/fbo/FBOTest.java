@@ -72,8 +72,6 @@ public class FBOTest {
     //constants
     private static final String LWJGL_NATIVIES = System.getProperty("user.dir") +"/target/natives";
     private static final String ORG_LWJGL_LIBPATH = "org.lwjgl.librarypath";
-//    private static final String LIB_LWJGL = "lwjgl";
-//    private static final String TEMP_FOLDER = "target";
 
     float angle;
     
@@ -393,46 +391,9 @@ public class FBOTest {
     }
     
     public static void main(String[] argv) {
-        //setupNativesLibrary();
         System.setProperty(ORG_LWJGL_LIBPATH, LWJGL_NATIVIES);
         FBOTest fboExample = new FBOTest();
         fboExample.start();
     }
     
-    private static void setupNativesLibrary() {
-        System.out.println("Setup natives library.");
-        //        SharedLibraryExtractor extractor = new SharedLibraryExtractor();
-        //        File nativesDir = null;
-        //        String path = null;
-        //        try {
-        //            nativesDir = extractor.extractLibrary(LIB_LWJGL, null).getParentFile();
-        //            path = nativesDir.getAbsolutePath();
-        //        }
-        //        catch (Throwable ex) {
-        //            try {
-        //                nativesDir = extractor.extractLibrary(LIB_LWJGL, TEMP_FOLDER).getParentFile();
-        //                path = nativesDir.getAbsolutePath();
-        //            }
-        //            catch (Exception e) {
-        //                System.out.println("Unable to extract LWJGL native libraries.");
-        //                e.printStackTrace();
-        //                //                try {
-        //                //                    
-        //                //                    URL url = new URL(".\target\natives");
-        //                //                    if (url == null) {
-        //                //                        throw new RuntimeException("Unable to extract LWJGL native libraries.");
-        //                //                    }
-        //                //                    path = url.toURI().normalize().getPath();
-        //                //                }
-        //                //                catch (Exception e2) {
-        //                //                    System.out.println("An error occurred during setting up manualy path!");
-        //                //                    e2.printStackTrace();
-        //                //                }
-        //            }
-        //        }
-        //        if (nativesDir == null) {
-        //        } else {
-        //            System.setProperty(ORG_LWJGL_LIBPATH, nativesDir.getAbsolutePath());
-        //        }
-    }
 }
